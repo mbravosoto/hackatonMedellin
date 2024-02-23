@@ -1,0 +1,14 @@
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .app-background {
+    min-height: 100%;
+    width: 100%;
+    background-image: url('/assets/hola.png'); /* correct the extension if necessary */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  
