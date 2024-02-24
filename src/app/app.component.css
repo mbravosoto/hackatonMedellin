@@ -51,4 +51,20 @@ html, body {
     cursor: pointer; /* Cursor on hover */
   }
   
+  .slidecontainer input[type="range"] {
+    -webkit-appearance: none; /* Override the default appearance */
+    width: 300px; /* Length of the slider */
+    height: 25px; /* Height of the slider for a vertical orientation */
+    background: blue; /* Color of the slider */
+    transform: rotate(90deg); /* Rotate slider to vertical */
+  }
+  
+  .slidecontainer input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px; /* Width of the thumb */
+    height: 25px; /* Height of the thumb */
+    background: #4CAF50; /* Color of the thumb */
+    cursor: pointer; /* Cursor on hover */
+  }
   

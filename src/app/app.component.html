@@ -4,7 +4,7 @@
 
 <div class="app-background" [ngStyle]="{'background-image': 'url(' + backgroundImage + ')'}">
     <div class="slidecontainer">
-        <input type="range" min="0" max="36" [(ngModel)]="sliderValue" (input)="updateValue()" class="slider" id="myRange">
+        <input type="range" min="0" max="36" [(ngModel)]="sliderValue" (input)="updateValue()" id="myRange">
         <p>Temperatura: <span>{{ sliderValue }}</span></p>
     </div>
 </div>
