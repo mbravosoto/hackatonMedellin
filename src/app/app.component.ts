@@ -13,7 +13,7 @@ import { FormsModule } from '@angular/forms'; // Import FormsModule
 })
 export class AppComponent {
   title = 'dapp-angular';
-  sliderValue = 20; 
+  sliderValue = 18; 
   updateValue() {
     console.log(this.sliderValue);
   }
