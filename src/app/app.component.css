@@ -67,3 +67,12 @@ input[type="range"] {
   background: white; /* Asegura que la barra tenga fondo blanco */
   border: 2px solid black; /* Añade un borde negro alrededor de la barra */
 }
+
+.red-page {
+  background-color: red;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html>
 <body>
-
-<div class="app-background" [ngStyle]="{'background-image': 'url(' + backgroundImage + ')'}">
+<!-- Página inicial con fondo rojo -->
+<div *ngIf="showInitialPage" style="background-color: red; height: 100vh; width: 100vw;">
+    <button (click)="changeView()">Hola</button>
+  </div>
+  
+  <!-- Tu diseño actual, mostrado solo si showInitialPage es falso -->
+  <div *ngIf="!showInitialPage" class="app-background" [ngStyle]="{'background-image': 'url(' + backgroundImage + ')'}">
     <div class="slidecontainer">
-        <input type="range" min="0" max="36" [(ngModel)]="sliderValue" (input)="updateValue()" id="myRange">
-        <p><span class="value-circle">{{ sliderValue }}</span></p>
+      <input type="range" min="0" max="36" [(ngModel)]="sliderValue" (input)="updateValue()" id="myRange">
+      <p><span class="value-circle">{{ sliderValue }}</span></p>
     </div>
-</div>
+  </div>
+  
 </body>
 </html>

@@ -17,6 +17,7 @@ export class AppComponent {
   title = 'dapp-angular';
   sliderValue = 18;
   backgroundImage = '/assets/Verde.png'; 
+  showInitialPage = true;
 
   constructor() {
     this.updateBackgroundImage(); 
@@ -35,4 +36,9 @@ export class AppComponent {
       this.backgroundImage = '/assets/Rojo.png'; 
     }
   }
+
+  changeView() {
+    this.showInitialPage = false; // Cambia a la vista principal cuando se presiona el botón "Hola"
+  }
 }
+
