@@ -1,7 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
 <div class="app-background">
-    <router-outlet></router-outlet>
-    <div class="slidecontainer">
-        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-      </div>
-    </div>
-  
+  <div class="slidecontainer">
+    <input type="range" min="20" max="100" value="20" class="slider" id="myRange">
+    <p>Value: <span id="demo">20</span></p>
+  </div>
+</div>
+
+<script>
+  var slider = document.getElementById("myRange");
+  var output = document.getElementById("demo");
+  output.innerHTML = slider.value; // Display the initial slider value
+
+  slider.oninput = function() {
+    output.innerHTML = this.value; // Update the displayed value as the slider is moved
+  }
+</script>
+
+</body>
+</html>

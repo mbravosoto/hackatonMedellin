@@ -6,14 +6,14 @@ html, body {
   .app-background {
     min-height: 100%;
     width: 100%;
-    background-image: url('/assets/hola.png'); /* correct the extension if necessary */
+    background-image: url('/assets/hola.png'); 
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
   }
 
   .slidecontainer {
-    width: 100%; /* Width of the outside container */
+    width: 100%; 
   }
   
   /* The slider itself */
