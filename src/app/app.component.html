@@ -3,11 +3,12 @@
 <body>
 
 <div class="app-background">
-  <div class="slidecontainer">
-    <input type="range" min="20" max="100" value="20" class="slider" id="myRange">
-    <p>Value: <span id="demo">20</span></p>
-  </div>
+    <div class="slidecontainer">
+        <input type="range" min="20" max="100" [(ngModel)]="sliderValue" (input)="updateValue()" class="slider" id="myRange">
+        <p>Value: <span>{{sliderValue}}</span></p>
+    </div>
 </div>
+      
 
 <script>
   var slider = document.getElementById("myRange");
